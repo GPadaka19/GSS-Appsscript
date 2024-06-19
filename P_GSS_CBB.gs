@@ -31,7 +31,7 @@ function createAndRenameSheets() {
     }
 
     // Menyembunyikan kolom yang memiliki header kosong
-    var headerRange = newSheet.getRange("A1:P1"); // Anggap header berada di kolom A hingga V
+    var headerRange = newSheet.getRange("A1:P1"); // Anggap header berada di kolom A hingga P
     var headers = headerRange.getValues()[0]; // Dapatkan nilai header
     for (var k = 0; k < headers.length; k++) {
       if (headers[k] == "") { // Jika header kosong
